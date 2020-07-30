@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Identity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/css/main.css" />
+		<noscript><link rel="stylesheet" href="/static/css/noscript.css" /></noscript>
+
+        <style>
+            #wrapper:before{
+                content: normal;
+            }
+        </style>
+	</head>
+	<body class="is-preload"><!DOCTYPE HTML>
+<!--
+    Identity by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Identity by HTML5 UP</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="/static/css/main.css" />
+        <noscript><link rel="stylesheet" href="/static/css/noscript.css" /></noscript>
+
+        <style>
+            #wrapper:before{
+                content: normal;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Main -->
+                    <section id="main">
+                        <header>                                                        
+                            <p>Prediction du type de déchet</p>
+                        </header>
+                        <h1> {{data}}</h1>
+
+                        <form method="post" action="/confirmation">
+                            <div>
+                                <div class="field">
+                                    <input type="submit" value="confirm"/>
+                                    <p><br></p>
+                                    <p> Problème d'identification ? <br> <br> Sélection Mannuelle </p>
+
+                                    <input
+                                    type="radio"
+                                    name="type"
+                                    id="couverts"
+  
+                                    value="couverts"
+                                >
+                                <label for="couverts"> couverts</label>
+                                  <br>
+
+                                  <input
+                                  type="radio"
+                                  name="type"
+                                  id="gobelets"
+
+                                  value="gobelets"
+                              >
+
+                              <label for="gobelets"> gobelets</label>
+                                <br>
+                                  <input
+                              type="radio"
+                              name="type"
+                              id="bouteilles"
+
+                              value="bouteilles"
+                          >
+                          <label for="bouteilles">bouteille</label>
+
+                                </div>
+                                <form method="post" action="/confirmation">
+                                    <div>
+                                        <div class="field">
+                                            <input type="submit" value="confirm"/>
+                            </div>
+
+                        </form>
+
+                    </section>
+
+
+            </div>
+
+        <!-- Scripts -->
+            <script>
+                if ('addEventListener' in window) {
+                    window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+                    document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+                }
+            </script>
+
+    </body>
+</html>
+
+
+
